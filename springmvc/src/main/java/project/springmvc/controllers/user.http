@@ -1,0 +1,76 @@
+### Post product
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+
+   "login" : "c",
+   "password": "c",
+   "firstName": "c",
+   "lastName": "c",
+   "clientID": "",
+   "mechanicId":""
+}
+
+### get all products
+GET  http://localhost:8080/api/user/all
+
+###
+GET  http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+
+  "login" : "c",
+  "password": "c"
+}
+
+###
+### get USER by id
+
+GET  http://localhost:8080/api/user/login/8caaaf72-dcb2-4865-a29d-4db56b364dde
+
+###
+### get all cars
+GET  http://localhost:8080/api/car/all
+
+###
+### get by id car
+GET  http://localhost:8080/api/car/d810aa66-0f01-4c34-90ea-3816ca3be491
+### delete car by id
+DELETE  http://localhost:8080/api/car/delete/247854b5-aa16-4049-8fdc-3b21595683fe
+###
+### Post car
+POST http://localhost:8080/api/car
+Content-Type: application/json
+
+{
+
+  "marka" : "cdas",
+  "model": "casda",
+  "nrRejestracyjny": "casdas",
+  "rok": "0212",
+  "paliwo": "benz",
+  "userId":"e4d21f1d-94d6-4e28-8308-2fec81a0dd23"
+}
+
+###
+
+### get all repairs
+GET  http://localhost:8080/api/repair/all
+
+###
+
+### delete repair by carid
+DELETE  http://localhost:8080/api/repair/delete/58e55460-7eff-45b2-b2e7-52ed6958fe64
+
+### post repair
+POST http://localhost:8080/api/repair
+Content-Type: application/json
+
+{
+
+  "carId":"e4d21f1d-94d6-4e28-8308-2fec81a0dd23"
+}
+
+###
